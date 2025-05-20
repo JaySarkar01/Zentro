@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+// Update the import path below if the alias '@' is not configured, e.g.:
+import { Navbar } from "../components/Navbar";
+// Or, if the alias is configured, ensure the file exists at src/components/Navbar.tsx or src/components/Navbar/index.tsx
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
