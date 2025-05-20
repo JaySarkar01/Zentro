@@ -12,6 +12,7 @@ export const Navbar = () => {
                 <Link href="/">Home</Link>
                 <Link href="/products">Products</Link>
                 <Link href="/checkout">Checkout</Link>
+                <Link href="/contact">Contact</Link>
                 </div>
         </nav>
     )
